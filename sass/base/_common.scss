@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+body {
+  font-family: $mine-font;
+  font-style: normal;
+  color: $mine-text-color;
+  background-color: $mine-background;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
+
+  .about-us & {
+    margin-bottom: 50px;
+  }
+
+  .team & {
+    margin-bottom: 50px;
+  }
+
+  .clients & {
+    margin-bottom: 50px;
+  }
+}

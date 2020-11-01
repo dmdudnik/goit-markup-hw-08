@@ -1,0 +1,41 @@
+.features {
+  padding-top: 94px;
+}
+
+.features-list {
+  display: flex;
+}
+
+.features-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features .sub-title {
+  margin-bottom: 10px;
+}
+
+.sub-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $title-text-color;
+}
+
+.features-img {
+  margin-bottom: 30px;
+}
+
+.features-img .features-img-icon {
+  width: 70px;
+  height: 70px;
+  margin: 25px 100px;
+}
+
+.features-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
