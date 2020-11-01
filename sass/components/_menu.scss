@@ -1,0 +1,58 @@
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  & .icon-cross {
+    display: none;
+  }
+
+  &.is-open .icon-cross {
+    display: block;
+  }
+
+  &.is-open .icon-menu {
+    display: none;
+  }
+}
+
+.menu-container {
+  display: none;
+  padding: 20 px;
+  background-color: yellow;
+
+  &.is-open {
+    display: block;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 767px) {
+    display: flex;
+  }
+}
+
+.menu-navigation .menu-contacts {
+  height: 40px;
+  width: 50px;
+}
+
+.menu-navigation {
+  outline: 1px solid black;
+}
+
+.menu-contacts {
+  outline: 1px solid teal;
+}
