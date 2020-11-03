@@ -295,6 +295,62 @@ body {
   cursor: pointer;
 }
 
+.hero {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 118px 0;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.615;
+  text-align: center;
+  margin: 0 auto;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 360px;
+  padding-bottom: 30px;
+}
+
+.hero-btn {
+  text-align: center;
+}
+
+.hero .modal-btn {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
+  padding: 10px 28px;
+  min-width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border-style: hidden;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero .hero {
+    padding: 200px 0;
+    max-width: 1600px;
+  }
+  .hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.364;
+    width: 696px;
+  }
+}
+
 .features {
   padding-top: 94px;
 }
