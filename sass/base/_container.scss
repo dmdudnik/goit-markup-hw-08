@@ -1,20 +1,37 @@
 .container {
-  width: 1200px;
   padding: 0 15px;
-  margin: 0 auto;
-  align-items: center;
 
-  .header & {
-    display: flex;
+  @media screen and(min-width: 480px) {
+    .container {
+      width: 480px;
+      margin: 0 auto;
+    }
   }
 
-  .hero & {
-    padding-top: 200px;
-    padding-bottom: 200px;
+  @media screen and (min-width: 768px) {
+    .container {
+      width: 768px;
+    }
   }
 
-  .portfolio-selector & {
-    padding-top: 94px;
-    padding-bottom: 34px;
+  @media screen and (min-width: 1200px) {
+    .container {
+      width: 1200px;
+      align-items: center;
+
+      .header & {
+        display: flex;
+      }
+
+      .hero & {
+        padding-top: 200px;
+        padding-bottom: 200px;
+      }
+
+      .portfolio-selector & {
+        padding-top: 94px;
+        padding-bottom: 34px;
+      }
+    }
   }
 }
