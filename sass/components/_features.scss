@@ -1,41 +1,92 @@
 .features {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  .features-img {
+    margin-bottom: 30px;
+  }
+
+  .features-img .features-img-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .sub-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: $title-text-color;
+  }
+
+  .features-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+  }
 }
 
-.features-list {
-  display: flex;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .features-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .features-img .features-img-icon {
+    margin: 25px 190px;
+  }
+
+  .sub-title {
+    text-align: center;
+  }
 }
 
-.features-list-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+
+    .features-list-item {
+      margin-bottom: 30px;
+
+      &:not(:nth-child(2n)) {
+        margin-right: 30px;
+      }
+    }
+
+    .features-img .features-img-icon {
+      margin: 25px 142px;
+    }
+  }
+
+  .sub-title {
+    text-align: left;
+  }
 }
 
-.features .sub-title {
-  margin-bottom: 10px;
-}
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+  }
 
-.sub-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $title-text-color;
-}
+  .features-list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 
-.features-img {
-  margin-bottom: 30px;
-}
+  .features-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
 
-.features-img .features-img-icon {
-  width: 70px;
-  height: 70px;
-  margin: 25px 100px;
-}
+  .features-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
 
-.features-description {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
+  .features-img .features-img-icon {
+    margin: 25px 100px;
+  }
 }
