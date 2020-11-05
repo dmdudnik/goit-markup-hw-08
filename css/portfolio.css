@@ -66,15 +66,9 @@ body {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    margin: 0 auto;
-    align-items: center;
   }
   .header .container {
     display: flex;
-  }
-  .hero .container {
-    padding-top: 200px;
-    padding-bottom: 200px;
   }
   .portfolio-selector .container {
     padding-top: 94px;
