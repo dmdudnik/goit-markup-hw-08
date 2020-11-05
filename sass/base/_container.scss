@@ -1,6 +1,7 @@
 .container {
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
 }
 
 @media screen and(min-width: 480px) {
@@ -18,21 +19,19 @@
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    margin: 0 auto;
-    align-items: center;
+  }
 
-    .header & {
-      display: flex;
-    }
+  .header & {
+    display: flex;
+  }
 
-    .hero & {
-      padding-top: 200px;
-      padding-bottom: 200px;
-    }
+  .hero & {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 
-    .portfolio-selector & {
-      padding-top: 94px;
-      padding-bottom: 34px;
-    }
+  .portfolio-selector & {
+    padding-top: 94px;
+    padding-bottom: 34px;
   }
 }
