@@ -1,19 +1,17 @@
 .features {
   padding-top: 60px;
   padding-bottom: 60px;
-
-  &-list-item {
-    width: 100%;
-  }
 }
 
 .features-img {
   margin: 0 auto;
+  text-align: center;
 }
 
 .features-img .features-img-icon {
   width: 70px;
   height: 70px;
+  margin: 25px auto;
 }
 
 .sub-title {
@@ -23,6 +21,7 @@
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   margin-bottom: 10px;
   color: $title-text-color;
 }
@@ -35,16 +34,14 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .features-list-item:not(:last-child) {
-    margin-bottom: 30px;
-  }
+  .features-list {
+    &-item {
+      width: 100%;
+    }
 
-  .features-img .features-img-icon {
-    margin: 25px 190px;
-  }
-
-  .sub-title {
-    text-align: center;
+    &-item:nth-child(-n + 3) {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -54,21 +51,16 @@
     flex-wrap: wrap;
 
     &-item {
-      width: 354px;
-      margin-bottom: 30px;
+      width: calc((100% - 2 * 15px) / 2);
     }
 
     &-item:not(:nth-child(2n)) {
       margin-right: 30px;
     }
 
-    &-item::nth-child(-n + 2) {
-      margin-bottom: 0px;
+    &-item:nth-child(-n + 2) {
+      margin-bottom: 30px;
     }
-  }
-
-  .features-img .features-img-icon {
-    margin: 25px 142px;
   }
 
   .sub-title {
