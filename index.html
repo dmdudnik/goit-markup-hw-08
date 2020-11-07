@@ -390,13 +390,36 @@
               </div>
             </li>
             <li class="team-list-item list">
-              <img
-                class="team-list-item-img"
-                src="./images/team/michail.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/team/michail-desktop.webp 1x, ./images/team/michail-desktop@2x.webp 2x"
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team/michail-tablet.webp 1x, ./images/team/michail-tablet@2x.webp 2x"
+                  type="image/webp"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/team/michail-mobile.webp 1x, ./images/team/michail-mobile@2x.webp 2x"
+                  type="image/webp"
+                  media="(min-width: 320px) and (max-width: 767px)"
+                />
+                <source
+                  srcset="./images/team/michail-desktop.jpg 1x, ./images/team/michail-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team/michail-tablet.jpg 1x, ./images/team/michail-tablet@2x.jpg 2x"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/team/michail-mobile.jpg 1x, ./images/team/michail-mobile@2x.jpg 2x"
+                  media="(min-width: 320px) and (max-width: 767px)"
+                />
+                <img class="team-list-item-img" src="./images/team/michail-desktop.jpg" alt="Михаил Ермаков" />
+              </picture>
               <div class="team-list-content">
                 <h3 class="team-sub-title">Михаил Ермаков</h3>
                 <p class="team-description" lang="en">UI Designer</p>
