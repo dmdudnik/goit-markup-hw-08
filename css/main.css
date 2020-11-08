@@ -70,10 +70,6 @@ body {
   .header .container {
     display: flex;
   }
-  .portfolio-selector .container {
-    padding-top: 94px;
-    padding-bottom: 34px;
-  }
 }
 
 .backdrop {
