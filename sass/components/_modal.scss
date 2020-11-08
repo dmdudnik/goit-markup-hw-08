@@ -221,3 +221,34 @@
   background-color: $accent-color;
   cursor: pointer;
 }
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+
+    &-title {
+      line-height: 1.15;
+    }
+  }
+  .modal-form {
+    font-size: 12px;
+
+    &::placeholder {
+      font-size: 12px;
+      line-height: 1.167;
+    }
+  }
+
+  .modal-form-policy {
+    &-label {
+      font-size: 14px;
+      line-height: 1.714;
+
+      & a {
+        font-size: 14px;
+        line-height: 1.714;
+      }
+    }
+  }
+}
