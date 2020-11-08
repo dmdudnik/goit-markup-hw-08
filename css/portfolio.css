@@ -436,9 +436,9 @@ body {
 }
 
 .footer {
-  background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: #2f303a;
 }
 
 .footer .contact-list-item {
@@ -608,11 +608,6 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .footer {
-    height: 252px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
   .footer-items {
     display: flex;
     flex-wrap: nowrap;
@@ -627,8 +622,6 @@ body {
     width: 260px;
     height: 81px;
     text-align: left;
-    padding-top: 60px;
-    padding-bottom: 60px;
     margin-right: 70px;
   }
   .footer .contact-list-item {
@@ -650,7 +643,7 @@ body {
     display: flex;
     align-items: center;
   }
-  .footer .subscribe-form-input {
+  .footer-subscribe-form-input {
     margin-bottom: 0;
     margin-right: 12px;
   }
