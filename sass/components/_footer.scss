@@ -2,14 +2,13 @@
   background-color: $secondary-background;
   padding-top: 60px;
   padding-bottom: 60px;
-  &-items {
-  }
 
   .contact-list-item {
     text-align: center;
     margin-bottom: 60px;
 
-    &-maplink {
+    &-maplink,
+    &-link {
       font-weight: 400;
       font-size: 14px;
       line-height: 1.714;
@@ -18,15 +17,12 @@
     }
 
     &-link {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 1.714;
       letter-spacing: 0.03em;
       color: rgba(255, 255, 255, 0.6);
     }
 
     &:not(:last-child) {
-      margin-bottom: 9px;
+      margin-bottom: 8px;
     }
   }
 
@@ -155,27 +151,87 @@
   }
 }
 
-// .footer {
-//   height: 252px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer {
+    &-items {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
 
-//   &-items {
-//     display: flex;
-//   }
+    &-contacts {
+      width: 50%;
+    }
+    &-social {
+      width: 50%;
+    }
+    &-subscribe {
+      text-align: center;
+      width: 100%;
+    }
 
-//   &-contacts {
-//     width: 260px;
-//     height: 81px;
-//     padding-top: 60px;
-//     padding-bottom: 60px;
-//     margin-right: 70px;
-//   }
-// }
+    .subscribe-form-input {
+      width: 450px;
+    }
+  }
+}
 
-// .footer-social {
-//   width: 206px;
-//   height: 80px;
-//   padding-top: 72px;
-//   padding-bottom: 100px;
+@media screen and (min-width: 1200px) {
+  .footer {
+    height: 252px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    &-items {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+    &-logo {
+      text-align: left;
+    }
+
+    &-title {
+      text-align: left;
+    }
+
+    &-contacts {
+      width: 260px;
+      height: 81px;
+      text-align: left;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      margin-right: 70px;
+    }
+
+    .contact-list-item {
+      text-align: left;
+    }
+
+    &-social {
+      width: 206px;
+      height: 80px;
+      padding-top: 72px;
+      padding-bottom: 100px;
+    }
+
+    &-subscribe {
+      width: 570px;
+      height: 86px;
+      margin-top: 72px;
+      margin-left: 93px;
+
+      &-form {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .subscribe-form-input {
+      margin-bottom: 0;
+      margin-right: 12px;
+    }
+  }
+}
 
 //   &-list {
 //     display: flex;
@@ -203,18 +259,6 @@
 //   width: 20px;
 //   height: 20px;
 //   fill: $mine-background;
-// }
-
-// .footer-subscribe {
-//   width: 570px;
-//   height: 86px;
-//   margin-top: 72px;
-//   margin-left: 93px;
-
-//   &-form {
-//     display: flex;
-//     align-items: center;
-//   }
 // }
 
 // .subscribe-form-input {
