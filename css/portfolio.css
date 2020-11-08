@@ -406,7 +406,7 @@ body {
 }
 
 .portfolio-card-content {
-  padding: 20px 24px;
+  padding: 20px 18px;
 }
 
 .portfolio-card-subtitle {
@@ -464,6 +464,7 @@ body {
   }
   .portfolio-list .portfolio-list-item {
     width: calc((100% - 4 * 15px) / 2);
+    height: 404px;
   }
   .portfolio-list .portfolio-list-item:nth-child(9) {
     margin-bottom: 0px;
