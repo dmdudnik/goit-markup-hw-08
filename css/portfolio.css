@@ -266,7 +266,7 @@ body {
   }
   .navigation-list-link.current::after {
     left: 0;
-    top: 40px;
+    top: 41px;
   }
 }
 
